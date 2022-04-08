@@ -13,3 +13,15 @@ export function setToken(token) {
 export function removeToken() {
   return Cookies.remove(TokenKey)
 }
+
+export function getItem(name) {
+  return sessionStorage.getItem(name)
+}
+
+export function setItem(name, value) {
+  return sessionStorage.setItem(name, value)
+}
+
+export function removeItem(name) {
+  return sessionStorage.removeItem(name)
+}
