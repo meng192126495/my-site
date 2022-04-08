@@ -76,7 +76,18 @@ export const constantRoutes = [
       }
     ]
   },
-
+  {
+    path: '/areaManage',
+    component: Layout,
+    children: [
+      {
+        path: '',
+        name: 'AreaManage',
+        component: () => import('@/views/AreaManage/index'),
+        meta: { title: '区域管理', icon: 'el-icon-map-location' }
+      }
+    ]
+  },
   {
     path: '/form',
     component: Layout,
